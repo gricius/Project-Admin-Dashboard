@@ -1,5 +1,4 @@
 * {
-    border: 1px solid red;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -69,6 +68,8 @@
     grid-row: 3 / 4;
 }
 
+/* end sidebar */
+
 .header {
     background-color: white;
     grid-column: 2 / 3;
@@ -89,14 +90,13 @@
 
 .search-icon {
     margin-right: 8px;
-    width: 30px;
+    width: 25px;
 }
 
 .search-input {
     padding-left: 10px;
-    width: 80vw;
-    max-width: 600px;
-    height: 25px;
+    width: 40vw;
+    height: 30px;
     background-color: rgba(226, 232, 240, 255);
     border: none;
     border-radius: 15px;
@@ -154,18 +154,120 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 25vw;
+    width: 30vw;
     margin-bottom: 18px;
+    margin-right: 25px;
 }
 
 .btn-header {
     color: white;
-    font-weight: 500;
+    font-weight: 900;
     background-color: rgba(25, 146, 212, 255);
     width: 95px;
     height: 40px;
     border-radius: 15px;
     border: none;
     margin-bottom: 5px;
+}
+
+/* end header */
+.main {
+    background-color: rgba(226, 232, 240, 255);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px 20px 40px 20px;
+    max-height: 100%;
+}
+
+.projects {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-block-end: 1em;
+
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+    width: 48%;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    min-width: 265px;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(left, #fdcb80, #fcb251 2%, transparent 2%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, #fdcb80, #fcb251 2%, transparent 2%, transparent 100%)
+}
+
+.project-options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 20px;
+    display: inline-block;
+
+}
+
+.project-option-img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-bottom: 10px;
+}
+
+.announcement {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 20px 20px 20px 25px;
+    border-radius: 5px;
+    min-width: 231px;
+}
+
+hr {
+    margin-top: 2em;
+
+}
+
+.trending {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.trending-profile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 20px 20px 20px 25px;
+    border-radius: 5px;
+    min-width: 231px;
+}
+
+.trending-profile img {
     margin-right: 10px;
 }
